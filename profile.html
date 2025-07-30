@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <h1>profile page</h1>
+    </nav>
+    
+   
+<script src="app.js"></script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Profile</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="style.css">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+			rel="stylesheet" />
+		<link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+		<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+
+	<body>
+	
+
+		<nav>
+    <h1 style="color: white;">My Website</h1>
+    <div class="profile-area" onclick="toggleDropdown()">
+      <div class="profile-mini">
+        <img src="https://via.placeholder.com/40" id="navbarProfilePic" />
+        <span id="navbarUserName">Qirat Areena</span>
+      </div>
+
+      <!-- Dropdown -->
+      <div class="dropdown" id="profileDropdown">
+        <img src="https://via.placeholder.com/80" id="dropdownProfilePic" />
+        <h3 id="dropdownName">Qirat Areena</h3>
+        <p id="dropdownEmail">qirat@example.com</p>
+
+        <div class="form-group">
+          <label for="newProfilePic">Change Picture</label>
+          <input type="file" id="newProfilePic" accept="image/*" />
+        </div>
+
+        <div class="btns">
+          <button class="change-btn" onclick="changePicture(event)">Change</button>
+          <button class="delete-btn" onclick="deletePicture(event)">Delete</button>
+        </div>
+
+        <div class="form-group">
+          <label for="newName">Full Name</label>
+          <input type="text" id="newName" value="Qirat Areena" oninput="updateName()" />
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
